@@ -5,7 +5,7 @@ let guessAttempt = 0;
 function guessNumber() {
   const userGuess = parseInt(searchField.value);
 
-  const computerGuess = Math.floor(Math.random() * 2) + 1;
+  const computerGuess = Math.floor(Math.random() * 5) + 1;
   if (isNaN(userGuess) || !userGuess) {
     feedBack.textContent = "Please enter valid number!";
     return;
@@ -24,4 +24,8 @@ function guessNumber() {
   searchField.value = "";
 }
 
-function restartGame() {}
+function restartGame() {
+  searchField.value = "";
+  feedBack.textContent = "";
+  guessAttempt = 0;
+}
