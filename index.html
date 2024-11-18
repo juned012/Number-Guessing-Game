@@ -7,14 +7,25 @@
     <title>Number Guessing Game</title>
   </head>
   <body>
-    <div>
-      <div>
-        <h3>Number Guessing Game</h3>
-        <input type="text" placeholder="Type Guessing Number" id="search" />
-        <button type="button" onclick="guessNumber()">Guess</button>
-        <div>
-          <h3 id="feedBack"></h3>
-          <button type="button" onclick="restartGame()">Restart</button>
+    <div class="container">
+      <div class="game-box">
+        <h3 class="title">🎯 Number Guessing Game</h3>
+        <div class="input-field-container">
+          <input
+            type="text"
+            placeholder="Type your number..."
+            id="search"
+            class="input-field"
+          />
+          <button type="button" class="btn guess-btn" onclick="guessNumber()">
+            Guess
+          </button>
+        </div>
+        <div class="feedback-container">
+          <h3 id="feedBack" class="feedback"></h3>
+          <button type="button" class="btn restart-btn" onclick="restartGame()">
+            Restart
+          </button>
         </div>
       </div>
     </div>
