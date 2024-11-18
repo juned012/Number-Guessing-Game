@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Number Guessing Game</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <div>
+        <h3>Number Guessing Game</h3>
+        <input type="text" placeholder="Type Guessing Number" id="search" />
+        <button type="button" onclick="guessNumber()">Guess</button>
+        <div>
+          <h3 id="feedBack"></h3>
+          <button type="button" onclick="restartGame()">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
